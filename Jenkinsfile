@@ -34,16 +34,6 @@ pipeline
             }
         }	
 
-		stage('Test for Dev') 
-		{
-            steps 
-			{
-                echo 'Test started.....'
-				
-				echo 'Test Completed'
-            }
-        }
-
 		stage('Deploy to Dev Environment') 
 		{
             steps 
