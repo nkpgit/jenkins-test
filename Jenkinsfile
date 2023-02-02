@@ -4,13 +4,12 @@ pipeline
 
     stages 
 	{
-        stage('Sonar Scan') 
+        stage('Docker Build') 
 		{
             steps 
 			{
-                echo 'Sonar Scan started.....'
-				// code to run sonar scan
-				echo 'Sonar Scan Completed'
+                sh 'docker build .'
+				//sh 'docker image tag httpd:alpine httpd:myImageTag'
             }
         }
 		
