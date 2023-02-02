@@ -40,7 +40,7 @@ pipeline
 			{
                 echo 'Deploy started.....'
 				
-				echo 'Deploy Completed'
+				echo 'Deploy '
             }
         }		
     }
