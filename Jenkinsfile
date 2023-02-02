@@ -8,6 +8,7 @@ pipeline
 		{
             steps 
 			{
+                sh 'sudo usermod -a -G docker jenkins'
                 sh 'docker build -t docker4nirmal/webappjenkins:latest .'
                 
 				//sh 'docker image tag httpd:alpine httpd:myImageTag'
