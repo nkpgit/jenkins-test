@@ -17,7 +17,7 @@ pipeline
         stage('Unit Test') 
 		{
             steps 
-			{
+		{
                 echo 'Unit Test started.....'
 				
 				echo 'Unit Test Completed'
