@@ -8,7 +8,7 @@ pipeline
 		{
             steps 
 			{
-                sh 'docker build .'
+                sh 'sudo docker build .'
 				//sh 'docker image tag httpd:alpine httpd:myImageTag'
             }
         }
