@@ -9,7 +9,7 @@ pipeline
             steps 
 			{
                 sh 'ls -l'
-                sh 'docker build -t webappjenkins:latest .'
+                sh 'docker build -t webappjenkins .'
                 
             }
         }
@@ -18,7 +18,7 @@ pipeline
 		{
             steps 
 		    {
-                sh 'docker run --name=webapp -p 80:80 webappjenkins:latest'
+                sh 'docker run --name=testapp -p 80:80 webappjenkins'
             }
         }
 
