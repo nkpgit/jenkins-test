@@ -9,7 +9,7 @@ pipeline
             steps 
 			{
                 sh 'ls -l'
-                //sh 'docker build -t docker4nirmal/webappjenkins:latest .'
+                sh 'docker build -t docker4nirmal/webappjenkins:latest .'
                 
 				//sh 'docker image tag httpd:alpine httpd:myImageTag'
             }
