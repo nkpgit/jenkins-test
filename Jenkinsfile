@@ -18,7 +18,7 @@ pipeline
 		{
             steps 
 		    {
-                sh 'docker run --name=testapp -p 80:80 webappjenkins'
+                sh 'docker run -p 80:80 webappjenkins'
             }
         }
 
